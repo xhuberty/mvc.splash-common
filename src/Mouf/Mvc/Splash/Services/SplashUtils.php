@@ -151,17 +151,6 @@ class SplashUtils {
 		return $values;
 	}
 	
-	/**
-	 * Thranslates a string using the Splash dictionnary 
-	 * @param string $msg
-	 */
-	public static function translate($msg) {
-		$translationService = MoufManager::getMoufManager()->getInstance("splashTranslateService");
-		/* @var $translationService FinePHPArrayTranslationService */
-	
-		return call_user_func_array(array($translationService, "getTranslation"), func_get_args());
-	}
-	
 }
 
 ?>
